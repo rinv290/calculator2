@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  min-height: 100vh;
+  background-color: #f8c8dc;
+  text-align: center;
+  padding-top: 25px;
+  font-family: Arial, sans-serif;
+}
+
+.Header {
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: #e342a0;
+  margin-bottom: 8px;
+}
+
+.Calculator {
+  width: 340px;
+  margin: auto;
+  padding: 16px 14px 20px;
+  background-color: #e99ac0;
+  border: 3px solid #6b351b;
+  border-radius: 25px;
+  box-shadow: 5px 5px 0px #a95076;
+}
+
+/* Calculator display */
+.Display {
+  height: 85px;
+  padding: 12px;
+  margin-bottom: 14px;
+
+  background-color: white;
+  border: 3px solid #6b351b;
+  border-radius: 18px;
+
+  color: #222;
+  font-size: 1.5em;
+  text-align: right;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Button layout */
+.Keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+/* Normal buttons + CLR + Equal */
+.Button,
+.ClrButton,
+.EqualButton {
+  height: 58px;
+
+  border: 3px solid #6b351b;
+  border-radius: 16px;
+
+  background-color: white;
+  color: #4b2a18;
+
+  font-size: 1.7em;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  box-shadow: 0px 4px 0px #7c3b25;
+
+  transition: 0.1s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CLR button */
+.ClrButton {
+  font-size: 1.4em;
+}
+
+/* Equal button */
+.EqualButton {
+  font-size: 1.7em;
+}
+
+/* Hover effect */
+.Button:hover,
+.ClrButton:hover,
+.EqualButton:hover {
+  background-color: #d5f1fa;
+}
+
+/* Click effect */
+.Button:active,
+.ClrButton:active,
+.EqualButton:active {
+  transform: translateY(3px);
+  box-shadow: 0px 1px 0px #7c3b25;
+}
+
+/* Surname button */
+.SurnameButton {
+  width: 100%;
+  height: 55px;
+  margin-top: 12px;
+
+  border: 3px solid #6b351b;
+  border-radius: 16px;
+
+  background-color: #fff;
+  color: #4b2a18;
+
+  font-size: 1.4em;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  box-shadow: 0px 4px 0px #7c3b25;
+
+  transition: 0.1s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SurnameButton:hover {
+  background-color: #d5f1fa;
+}
+
+.SurnameButton:active {
+  transform: translateY(3px);
+  box-shadow: 0px 1px 0px #7c3b25;
+}

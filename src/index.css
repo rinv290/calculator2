@@ -1,0 +1,84 @@
+/* 1. Use a more intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Set root defaults for smoother typography & line height */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+
+  /* Font smoothing */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 4. Ensure body fills the viewport gracefully */
+body {
+  min-height: 100vh;
+  /* For React single-page app root container */
+  min-height: 100dvh; 
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls and remove default styles */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* 7. Avoid text overflow on long headings/text */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Make buttons accessible and interactive by default */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* 9. Reset list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 10. Root container styling for React (#root) */
+#root {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
